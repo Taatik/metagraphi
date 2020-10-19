@@ -1,4 +1,4 @@
-# Metagrapho
+# Metagraphi
 
 A tool for transliterating liturgical Hebrew texts to the Romaniote reading tradition using Greek orthography.
 It is an augmentation of [havarot](https://github.com/charlesLoder/havarot).
@@ -11,14 +11,14 @@ This schema for transliteration was developed by Rabbi Gabriel.
 
 ### npm
 
-`npm install metagrapho`
+⚠️ Not currently registered on npm ⚠️
 
 ### local
 
 Download or clone this repository.
 
 ```bash
-cd metagrapho
+cd metagraphi
 npm install
 npm run build
 ```
@@ -26,7 +26,7 @@ npm run build
 ## example
 
 ```javascript
-const umschrift = require("metagrapho");
+const umschrift = require("metagraphi");
 const Text = umschrift.Text;
 const heb = new Text("שָׁלֹ֑ום");
 const transliteration = heb.transliterate();
