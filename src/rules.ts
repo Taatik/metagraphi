@@ -139,11 +139,12 @@ export const syllableRules = (syl: Syllable): string => {
       const tsereYod = /\u{05B5}\u{05D9}/u;
       if (hiriqYod.test(sylTrans)) {
         sylTrans = changeElementSplit(sylTrans, hiriqYod, "η");
+        sylMaterText = null;
       } else if (tsereYod.test(sylTrans)) {
         sylTrans = changeElementSplit(sylTrans, tsereYod, "αί");
         isAccented = false;
+        sylMaterText = null;
       }
-      sylMaterText = null;
     }
   }
 
