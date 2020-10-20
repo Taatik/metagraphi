@@ -6,7 +6,7 @@ const changeElementSplit = (input: string, split: RegExp, join: string) =>
 
 const addAcute = (input: string): string => {
   // using String.matchAll() would be preferred, but it will not have support on older machines
-  const vowels = /[αειοωυ]/g;
+  const vowels = /[αειοωυη]/g;
   let reversed = [...input].reverse().join("");
   const index = reversed.search(vowels);
   if (index !== -1) {
