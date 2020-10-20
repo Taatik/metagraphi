@@ -39,3 +39,14 @@ describe.each`
     expect(transliteratedHeb).toEqual(transliteration);
   });
 });
+
+describe.each`
+  description                       | hebrew         | transliteration
+  ${"seghol-yod (2ms plural sufx)"} | ${"אֱלֹהֶיךָ"} | ${"ελωεχα"}
+`("Seghol Yod:", ({ description, hebrew, transliteration }) => {
+  const heb = new Text(hebrew);
+  const transliteratedHeb = heb.transliterate();
+  test(`${description} to equal: ${transliteration}`, () => {
+    expect(transliteratedHeb).toEqual(transliteration);
+  });
+});
