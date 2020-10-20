@@ -6,7 +6,7 @@ const changeElementSplit = (input: string, split: RegExp, join: string) =>
 
 const addAcute = (input: string): string => {
   // using String.matchAll() would be preferred, but it will not have support on older machines
-  const vowels = /[αειοωυ]/g;
+  const vowels = /[αειοωυη]/g;
   let reversed = [...input].reverse().join("");
   const index = reversed.search(vowels);
   if (index !== -1) {
@@ -139,11 +139,12 @@ export const syllableRules = (syl: Syllable): string => {
       const tsereYod = /\u{05B5}\u{05D9}/u;
       if (hiriqYod.test(sylTrans)) {
         sylTrans = changeElementSplit(sylTrans, hiriqYod, "η");
+        sylMaterText = null;
       } else if (tsereYod.test(sylTrans)) {
         sylTrans = changeElementSplit(sylTrans, tsereYod, "αί");
         isAccented = false;
+        sylMaterText = null;
       }
-      sylMaterText = null;
     }
   }
 

@@ -4,6 +4,7 @@ describe.each`
   description                              | hebrew       | transliteration
   ${"consonantal waw"}                     | ${"וָו"}     | ${"βαβ"}
   ${"waw haser (holem precedes waw)"}      | ${"שָׁלֹום"}  | ${"σσαλωμ"}
+  ${"final holem waw"}                     | ${"כְּמוֹ"}  | ${"κεμω"}
   ${"shureq"}                              | ${"קוּם"}    | ${"κουμ"}
   ${"initial shureq"}                      | ${"וּלֶחֶם"} | ${"ουλεχεμ"}
   ${"Consonantal vav with holem as vowel"} | ${"עָוֹן"}   | ${"αβων"}
