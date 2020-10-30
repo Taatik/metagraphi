@@ -164,7 +164,7 @@ export const syllableRules = (syl: Syllable): string => {
   }
 
   const doubleSigmas = /σσ$/m;
-  if (doubleSigmas.test(sylTrans)) {
+  if (sylIsFinal && doubleSigmas.test(sylTrans)) {
     sylTrans = changeElementSplit(sylTrans, doubleSigmas, "σς");
   }
 
