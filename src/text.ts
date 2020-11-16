@@ -28,7 +28,11 @@ Word.prototype.transliterate = function (): string {
   }
   const transliteratedArr = this.syllables.map((syl) => syl.transliterate());
   const transliteration = transliteratedArr.reduce((a, c) => a + c, "");
-  return transliteration;
+  const checkLen =
+    this.syllables.length === 1
+      ? transliteration.replace("\u{0301}", "")
+      : transliteration;
+  return checkLen;
 };
 
 declare module "havarotjs/dist/text" {
