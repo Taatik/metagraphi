@@ -1,8 +1,7 @@
 import { Syllable } from "havarotjs/dist/syllable";
 import { transliterateMap } from "./hebCharTrans";
 
-const changeElementSplit = (input: string, split: RegExp, join: string) =>
-  input.split(split).join(join);
+const changeElementSplit = (input: string, split: RegExp, join: string) => input.split(split).join(join);
 
 const addAcute = (input: string): string => {
   // using String.matchAll() would be preferred, but it will not have support on older machines
@@ -31,11 +30,7 @@ export const syllableRules = (syl: Syllable): string => {
     let clusterTrans = cluster.text;
     clusterTrans = clusterTrans.replace(taamei, "");
     sylHasMater = sylHasMater ? true : cluster.isMater;
-    sylMaterText = sylMaterText
-      ? sylMaterText
-      : sylHasMater
-      ? clusterTrans
-      : null;
+    sylMaterText = sylMaterText ? sylMaterText : sylHasMater ? clusterTrans : null;
     /******************
      * SPIRANTIZATION
      ******************/
