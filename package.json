@@ -15,6 +15,14 @@
   },
   "author": "charlesLoder",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charlesLoder/metagraphi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/charlesLoder/metagraphi/issues"
+  },
+  "homepage": "https://github.com/charlesLoder/metagraphi",
   "dependencies": {
     "havarotjs": "^0.5.0"
   },
