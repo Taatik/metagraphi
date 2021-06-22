@@ -163,6 +163,11 @@ export const syllableRules = (syl: Syllable): string => {
     sylTrans = changeElementSplit(sylTrans, doubleIota, "ι");
   }
 
+  const doubleSigmas = /σσ$/m;
+  if (sylIsFinal && doubleSigmas.test(sylTrans)) {
+    sylTrans = changeElementSplit(sylTrans, doubleSigmas, "σς");
+  }
+
   sylTrans = isAccented ? addAcute(sylTrans) : sylTrans;
   return sylTrans;
 };

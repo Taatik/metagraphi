@@ -25,9 +25,10 @@ describe.each`
 });
 
 describe.each`
-  description                  | hebrew     | transliteration
-  ${"shin char plus shin dot"} | ${"שֶׁלֶם"} | ${"σσελεμ"}
-  ${"shin char plus sin dot"}  | ${"אָרַשׂ"} | ${"αρασ"}
+  description                  | hebrew      | transliteration
+  ${"shin char plus shin dot"} | ${"שֶׁלֶם"}  | ${"σσελεμ"}
+  ${"shin char plus sin dot"}  | ${"אָרַשׂ"}  | ${"αρασ"}
+  ${"final sigmas"}            | ${"לָבֵשׁ"} | ${"λαβεσς"}
 `("Sibiliants:", ({ hebrew, transliteration }) => {
   const heb = new Text(hebrew);
   const transliteratedHeb = heb.transliterate();

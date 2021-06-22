@@ -26,8 +26,8 @@ npm run build
 ## example
 
 ```javascript
-const umschrift = require("metagraphi");
-const Text = umschrift.Text;
+const metagraphi = require("metagraphi");
+const Text = metagraphi.Text;
 const heb = new Text("שָׁלֹ֑ום");
 const transliteration = heb.transliterate();
 transliteration;

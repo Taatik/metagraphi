@@ -2,7 +2,7 @@ import { Text } from "../src/index";
 
 describe.each`
   description                   | hebrew           | transliteration
-  ${"1 syl, accent on first"}   | ${"לָ֔ךְ"}       | ${"λάχ"}
+  ${"1 syl, no accent"}         | ${"לָ֔ךְ"}       | ${"λαχ"}
   ${"2 syls, accent on first"}  | ${"לֶ֬חֶם"}      | ${"λέχεμ"}
   ${"2 syls, accent on last"}   | ${"דָּבָ֑ר"}     | ${"νταβάρ"}
   ${"3 syls, accent on last"}   | ${"אֲרַנֵּ֥ן"}   | ${"αρανέν"}
