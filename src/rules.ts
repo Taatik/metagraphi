@@ -18,7 +18,7 @@ const addAcute = (input: string): string => {
 
 export const syllableRules = (syl: Syllable): string => {
   let sylTrans: string = "";
-  const taamei = /[\u{0590}-\u{05AF},\u{05BD},\u{05BF},\u{05C0},\u{05C3}]/u;
+  const taamei = /[\u{0590}-\u{05AF}\u{05BD,\u{05BF}\u{05C0}\u{05C3}]/u;
   const sylTxt = syl.text.replace(taamei, "");
   const sylIsFinal = syl.isFinal;
   const sylIsClosed = syl.isClosed;
