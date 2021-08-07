@@ -16,13 +16,3 @@ describe.each`
     expect(transliteratedHeb).toEqual(transliteration);
   });
 });
-/**
- * 
-  
-  
-  
-  ${"final chet w/ patach, NOT furtive"} | ${"מִתַּ֣חַת"}   | ${"mitachat"}
-  ${"final qamets-he"}                   | ${"מַלְכָּה"}    | ${"malka"}
-  
-  
-   */
