@@ -1,3 +1,5 @@
+![Metagraphi](./metagraphi-2400.png)
+
 # Metagraphi
 
 A tool for transliterating liturgical Hebrew texts to the Romaniote reading tradition using Greek orthography.
@@ -11,7 +13,9 @@ This schema for transliteration was developed by Rabbi Gabriel.
 
 ### npm
 
-⚠️ Not currently registered on npm ⚠️
+```
+npm install github:Taatik/metagraphi
+```
 
 ### local
 
