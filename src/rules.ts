@@ -144,7 +144,7 @@ export const syllableRules = (syl: Syllable): string => {
   }
 
   if (sylMaterText) {
-    let materRegx = new RegExp(sylMaterText);
+    const materRegx = new RegExp(sylMaterText);
     sylTrans = changeElementSplit(sylTrans, materRegx, "");
   }
 
