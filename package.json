@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/charlesLoder/metagraphi",
   "dependencies": {
-    "havarotjs": "^0.5.2"
+    "havarotjs": "^0.5.3"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
