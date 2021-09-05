@@ -10,6 +10,7 @@ describe.each`
   ${"furtive patach, he"}     | ${"גָבֹהַּ"}                       | ${"γαβωα"}
   ${"3ms suffix"}             | ${"דְּבָרָ֖יו"}                    | ${"ντεβαράβ"}
   ${"mixed with latin chars"} | ${"רוּחַ, אֲבֹותֵינוּ (לְעֹולָם)"} | ${"ρουαχ, αβωθενου (λεωλαμ)"}
+  ${"qamets qatan"}           | ${"כָּל הָעוֹלָם כָּל־הָעֵ֛ץ"}     | ${"κολ αωλαμ κολ-αέτς"}
 `("General Rules:", ({ description, hebrew, transliteration }) => {
   const heb = new Text(hebrew);
   const transliteratedHeb = heb.transliterate();
